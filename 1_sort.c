@@ -33,6 +33,13 @@ int compareInt(void *a, void *b) {
     return (*intA - *intB);
 }
 
+//用于比较字符
+char compareChar(void *a,void *b){
+    char *charA = (char *)a;
+    char *charB = (char *)b;
+    return (*charA - *charB);
+}
+
 int main() {
     int intArray[] = {5, 2, 9, 1, 5, 6};
     size_t numElements = sizeof(intArray) / sizeof(intArray[0]);
